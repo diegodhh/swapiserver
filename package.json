@@ -2,6 +2,10 @@
   "name": "y",
   "version": "1.0.0",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my-app && npm run build --prefix my-app",
+  },
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
